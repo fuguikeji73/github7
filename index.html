@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="客服页面。">
+    <meta name="keywords" content="客服页面">
+    <title>好运来！</title>
+    <link rel="icon" type="image/x-icon" href="./tu/logo.png">
+    <style>
+        /* 设置背景图 */
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('./tu/bj1.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* 顶部导航栏样式 */
+
+        .header {
+            /* 移除背景颜色和内边距 */
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        /* Logo 及图标容器样式 */
+
+        .logo-icons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .header a {
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .header img {
+            width: 120px;
+            height: auto;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .header img:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
+        /* Logo 样式 */
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        /* 新增的文字样式 */
+
+        .header-text {
+            color: rgb(255, 88, 124);
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .header-text1 {
+            color: rgb(229, 255, 0);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .header-text2 {
+            color: rgb(179, 255, 0);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .header-text3 {
+            color: rgb(255, 88, 124);
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .header-text4 {
+            color: rgb(247, 8, 8);
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        /* 顶部小图标容器样式 */
+
+        .header-icons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 中间图片容器样式 */
+
+        .image-container {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 70vh;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .image-container img:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
+        }
+
+        /* 左下角图标样式 */
+
+        .bottom-left-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .bottom-left-icon img {
+            width: 120px;
+            height: auto;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bottom-left-icon img:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
+        /* 响应式设计 - 手机端 */
+
+        @media (max-width: 600px) {
+            /* 设置手机端背景图 */
+            body {
+                background-image: url('./tu/bj1.png');
+            }
+            .header img {
+                width: 130px;
+            }
+            .logo img {
+                width: 110px;
+            }
+            .header-text {
+                font-size: 25px;
+            }
+            .header-icons {
+                margin-right: 10px;
+            }
+            .image-container {
+                padding: 10px;
+            }
+            .bottom-left-icon img {
+                width: 80px;
+            }
+        }
+
+        /* 页脚样式 */
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(244, 244, 244, 0.8);
+        }
+
+        /* 悬浮按钮样式 */
+
+        .floating-button {
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 25px 30px;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .floating-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部 Logo 和小图片标题 -->
+    <div class="header">
+        <!-- Logo 及图标容器 -->
+        <div class="logo-icons-container">
+            <!-- 左上角 Logo -->
+            <div class="logo">
+                <a href="/">
+                    <img src="./tu/logo.png" alt="Logo">
+                </a>
+            </div>
+            <!-- 顶部小图标 -->
+            <div class="header-icons">
+                <a href="xz.html">
+                    <img src="./tu/3.jpg" alt="图标1">
+                </a>
+                <a href="xz1.html">
+                    <img src="./tu/5.jpg" alt="图标3">
+                </a>
+
+            </div>
+        </div>
+        <!-- 新增的文字 -->
+        <span class="header-text">祝您2026年</br>旗开得胜</br><span class="header-text2">好运来！欢迎您</span></br><span class="header-text1">新人福利送不停</span></br><span class="header-text3">认准.cc</span></br><span class="header-text4">了解情况请点击右下角联系客服哟</span></span>
+
+    </div>
+     <style>
+        /* 基础样式重置 */
+
+        /* 右上角链接容器 */
+
+        .top-links1 {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 40%;
+        }
+
+        /* 右下角链接样式 */
+
+        .bottom-link1 {
+            position: absolute;
+            bottom: 8%;
+            left: 5%;
+            animation: float1 1s ease-in-out infinite;
+            /* 修改动画名称 */
+        }
+
+        /* 图片链接通用样式 */
+
+        .image-link1 {
+            display: block;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        .image-link1 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* 悬停效果 */
+
+        .image-link1:hover {
+            transform: scale(1.05);
+            /* 修改为正确的缩放值 */
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+        }
+
+        /* 浮动动画 */
+
+        @keyframes float1 {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* 手机端适配 */
+
+        @media (max-width: 768px) {
+            /* 修改为正确的媒体查询属性 */
+            .top-links1 {
+                gap: 10px;
+                max-width: 10%;
+            }
+            .bottom-link1 {
+                bottom: 10%;
+                left: 5%;
+            }
+            .bottom-link1 img {
+                width: 100px !important;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .top-links1 {
+                gap: 20px;
+            }
+            .image-link1 img {
+                min-width: 100px;
+            }
+        }
+    </style>
+    <a href="https://tawk.to/chat/697605e55af22f1982ab29c0/1jfqge2uj" class="image-link1 bottom-link1" target="_blank">
+            <img src="./tu/kefu.png" alt="在线客服！" style="width: 150px;">
+        </a>
+    <!-- 左下角图标 -->
+
+    <!-- 悬浮按钮 -->
+
+    <!-- 页脚 -->
+   
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/697605e55af22f1982ab29c0/1jfqge2uj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
